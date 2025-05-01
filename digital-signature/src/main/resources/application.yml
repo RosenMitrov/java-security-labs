@@ -1,0 +1,8 @@
+spring:
+  vault:
+    uri: http://localhost:8200
+    token: my-root-token
+    authentication: TOKEN
+    kv:
+      enabled: true
+      backend: secret

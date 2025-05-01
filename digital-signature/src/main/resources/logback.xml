@@ -1,0 +1,17 @@
+<configuration>
+    <!-- Enable debug logging for Vault and HttpClient -->
+    <logger name="com.bettercloud.vault" level="DEBUG"/>
+    <logger name="org.apache.http" level="DEBUG"/>
+
+    <!-- Set the root level to DEBUG -->
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <!-- Console appender definition -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+</configuration>
